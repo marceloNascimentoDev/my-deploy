@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-node-app
-        image: ghcr.io/vitoriadinizdev/my-node-app:cache
+        image: ghcr.io/vitoriadinizdev/my-node-app:latest
         ports:
         - containerPort: 3000
