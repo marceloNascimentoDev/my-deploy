@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-app
+  name: my-node-app
   labels:
-    app: my-app
+    app: my-node-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: my-app
+      app: my-node-app
   template:
     metadata:
       labels:
-        app: my-app
+        app: my-node-app
     spec:
       containers:
-      - name: my-app
-        image: ghcr.io/SEU_USUARIO/my-app:latest
+      - name: my-node-app
+        image: ghcr.io/vitoriadinizdev/my-node-app:cache
         ports:
         - containerPort: 3000
